@@ -1,0 +1,8 @@
+Sistema de Cadastro de clientes
+
+H1. Eu, como cliente, quero me cadastrar no site utilizando meu e-mail e uma senha.
+H2. Eu, como cliente, quero me logar no meu cadastro através de uma página. 
+H3. Eu, como cliente, quero "resetar" a minha senha quando eu não me lembrar.
+H4. Eu, como cliente, quero cadastrar o meu endereço no site.
+H5. Eu, como analista de negocio, gostaria que quando o cliente digitar o CEP, seja preenchido o logradouro, bairro, cidade e estado.
+H6. Eu, como analista de negocio, gostaria que o cliente pudesse utilizar sua conta do facebook para o cadastro.

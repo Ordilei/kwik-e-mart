@@ -1,0 +1,27 @@
+default: &defaults
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: kwik-e-mart_development
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+test:
+  <<: *defaults
+  database: kwik-e-mart_test
+
+development:
+  <<: *defaults
+  database: kwik-e-mart_development
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: kwik-e-mart_production
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
