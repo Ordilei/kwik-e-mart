@@ -6,10 +6,10 @@ describe "SIgnup" do
 
 			visit "/"
 			click_link "Cadastro"
-			fill_in "Seu Nome", :with => "jonis"
-			fill_in "Seu Email", :with => "email@test.com.br"
-			fill_in "Sua Senha", :with => "123456"
-			fill_in "Sua Confirmacao de senha", :with => "123456"
+			fill_in "Seu nome", :with => "jonis"
+			fill_in "Seu email", :with => "email@test.com.br"
+			fill_in "Sua senha", :with => "123456"
+			fill_in "Sua confirmacao de senha", :with => "123456"
 			click_button "Quero me cadastrar"
 
 		end

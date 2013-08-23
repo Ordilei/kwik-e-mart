@@ -1,0 +1,7 @@
+pt-BR: 
+  form: 
+    user: 
+      email: "Seu email"
+      name: "Seu nome"
+      password: "Sua Senha"
+      password_confirmation: "Sua confirmacao de senha"

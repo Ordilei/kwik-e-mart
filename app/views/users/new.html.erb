@@ -1,21 +1,21 @@
 <%= form_for @user, :url => "/signup" do |f| %>
 <p>
-	<%= f.label :name, "Seu Nome"%>
+	<%= f.label :name, t("form.user.name") %>
 	<%= f.text_field :name %>
 </p>
 
 <p>
-	<%= f.label :email, "Seu Email" %>
+	<%= f.label :email, t("form.user.email") %>
 	<%= f.email_field :email %>
 </p>
 
 <p>
-	<%= f.label :password, "Sua Senha" %>
+	<%= f.label :password, t("form.user.password") %>
 	<%= f.password_field :password %>
 </p>
 
 <p>
-	<%= f.label :password_confirmation, "Sua Confirmacao de senha" %>
+	<%= f.label :password_confirmation, t("form.user.password_confirmation") %>
 	<%= f.password_field :password_confirmation %>
 </p>
 
