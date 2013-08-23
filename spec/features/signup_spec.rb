@@ -10,14 +10,15 @@ describe "SIgnup" do
 			fill_in "Seu email", :with => "email@test.com.br"
 			fill_in "Sua senha", :with => "123456"
 			fill_in "Sua confirmacao de senha", :with => "123456"
-			click_button "Quero me cadastrar"
-
+			click_button "Cadastrar"
 		end
 
 		it "redirecionado para pagina de login" do
-			expect(current_path).to eql("/login")
+			expect(current_path).to eql ("/login")
 		end
-		it "ver mensagem de sucesso"
+
+		it "ver mensagem de sucesso" do 
+		end
 
 	end
 

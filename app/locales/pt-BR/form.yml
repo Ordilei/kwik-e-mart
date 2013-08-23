@@ -1,7 +1,11 @@
-pt-BR: 
+pt-BR:
+  helpers:
+    submit:
+      user:
+        create: "Cadastrar" 
   form: 
     user: 
       email: "Seu email"
       name: "Seu nome"
-      password: "Sua Senha"
+      password: "Sua senha"
       password_confirmation: "Sua confirmacao de senha"
