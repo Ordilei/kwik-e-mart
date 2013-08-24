@@ -24,8 +24,19 @@ describe "SIgnup" do
 	end
 
 	context "Com dados invalidos" do
-		it "exibir formulario de cadastro"
-		it "exibir mensagem de erro"
+		before do
+			visit "/"
+			click_link "Cadastro"
+			click_button "Cadastrar"
+		end
+
+		it "Validar formulario de cadastro" do
+			expect(current_path).to eql("/signup")
+		end 
+
+		it "exibir mensagem de erro" do 
+			expect(page).to have_content("O formulario contem erros")
+		end 
 	end
 
 end

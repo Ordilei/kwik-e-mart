@@ -1,3 +1,14 @@
+<% if @user.errors.any? %>
+	<p>O formulario contem erros: </p>
+
+	<ul>
+		<% @user.errors.full_messages.each do |message| %>
+			<li><%= message %></li>
+		<% end %>
+	</ul>
+<% end %>
+
+
 <%= form_for @user, :url => "/signup" do |f| %>
 <p>
 	<%= f.label :name, t("form.user.name") %>

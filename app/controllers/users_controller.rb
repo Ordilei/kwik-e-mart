@@ -4,12 +4,16 @@ class UsersController < ActionController::Base
   end
 
   def create
-  	@user = User.new
-  	@user.name = nil
-  	@user.save
+  	@user = User.new(params[:user])
 
-  	flash[:notice] = t("flash.users.create.notice")
-  	redirect_to "/login"
+  	if @user.save
+  		
+  		flash[:notice] = t("flash.users.create.notice")
+  		redirect_to "/login"
+
+  	else
+  		render :new
+  	end
   	  
   end
 end
