@@ -1,3 +1,9 @@
+GIT
+  remote: git@github.com:hananamar/bcrypt-ruby.git
+  revision: cbe335aadd1e8c3ec57ebf0943ddccaf77af0f37
+  specs:
+    bcrypt-ruby (3.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -131,6 +137,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  bcrypt-ruby!
   capybara
   libv8
   mysql2

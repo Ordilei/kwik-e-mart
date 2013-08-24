@@ -3,8 +3,9 @@ class User < ActiveRecord::Base
 
   attr_accessible :name, :email, :password, :password_confirmation
 
-  validates_presence_of :name, :email, :password
+  has_secure_password
+
+  validates_presence_of :name, :email
   validates_format_of :email, :with => EMAIL_FORMAT
-  validates_confirmation_of :password
   validates_uniqueness_of :email
 end

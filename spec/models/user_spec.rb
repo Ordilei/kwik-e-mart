@@ -24,7 +24,7 @@ describe User do
 
   	it "validacao de senha nula" do
   		user = User.create(:password => nil)
-  		expect(user).to have(1).error_on(:password)
+  		expect(user).to have(1).error_on(:password_digest)
   	end
 
   	it "validacao de confirmacao de senha" do

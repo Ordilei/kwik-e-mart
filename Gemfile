@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'rails-i18n' # gem de internacionalizacao
 gem 'mysql2'
+gem 'bcrypt-ruby', git: 'git@github.com:hananamar/bcrypt-ruby.git', :require => 'bcrypt'
 
 group :assets do
   gem 'sass-rails'
