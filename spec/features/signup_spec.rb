@@ -18,6 +18,7 @@ describe "SIgnup" do
 		end
 
 		it "ver mensagem de sucesso" do 
+			expect(page).to have_content(I18n.t("flash.users.create.notice"))
 		end
 
 	end

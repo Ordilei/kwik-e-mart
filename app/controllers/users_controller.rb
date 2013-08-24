@@ -8,6 +8,8 @@ class UsersController < ActionController::Base
   	@user.name = nil
   	@user.save
 
-  	redirect_to "login"
+  	flash[:notice] = t("flash.users.create.notice")
+  	redirect_to "/login"
+  	  
   end
 end

@@ -1,4 +1,4 @@
-class SessionsController < ActionController
+class SessionsController < ActionController::Base
 
 	def new
 	end
