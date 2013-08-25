@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   	if @user.save
   		
   		flash[:notice] = t("flash.users.create.notice")
-  		redirect_to "/login"
+  		redirect_to sign_in_path
 
   	else
   		render :new

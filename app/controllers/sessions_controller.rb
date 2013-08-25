@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-	before_filter :redirect_logged_user
+	before_filter :redirect_logged_user, :except => [:destroy]
 
 	def new
 	end
@@ -18,5 +18,10 @@ class SessionsController < ApplicationController
 			flash.now[:alert] = "Email ou senha invalidos"
 			render :new
 		end 
+	end
+
+	def destroy
+		reset_session
+		redirect_to sign_in_path
 	end
 end

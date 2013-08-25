@@ -1,7 +1,11 @@
-<%= link_to "Cadastro", "/signup" %>
+<%= link_to "Cadastro", signup_path %>
+
+<% if logged_in? %>
+		<%= link_to "Sair", logout_path %>
+<% end %>
 
 <% unless logged_in? %>
-<%= link_to "Acessar minha conta", "/login" %>
+<%= link_to "Acessar minha conta", sign_in_path %>
 <% end %>
 
 <% if logged_in? %>
