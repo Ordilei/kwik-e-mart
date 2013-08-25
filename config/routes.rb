@@ -5,7 +5,7 @@ KwikEMart::Application.routes.draw do
   post "/signup", :to => "users#create"
 
   get "/login", :to => "sessions#new"
-
+  post "/login", :to => "sessions#create"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

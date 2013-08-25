@@ -3,7 +3,9 @@ pt-BR:
     submit:
       user:
         create: "Cadastrar" 
-  form: 
+  form:
+    button:
+      login: "Logar" 
     user: 
       email: "Seu email"
       name: "Seu nome"

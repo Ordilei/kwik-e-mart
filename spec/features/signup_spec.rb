@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "SIgnup" do
+describe "Cadastro" do
 	context "Quando tiver dados validos" do
 		before do
 
