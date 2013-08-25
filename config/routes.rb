@@ -1,5 +1,5 @@
 KwikEMart::Application.routes.draw do
-  root :to => "produtos#index"
+  root :to => "home#index"
   
   get "/signup", :to => "users#new"
   post "/signup", :to => "users#create"
