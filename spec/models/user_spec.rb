@@ -34,12 +34,8 @@ describe User do
   	end
 
   	it "validacao de email unico" do
-  		existing = User.create!({
-  			:name => "teste",
-  			:email => "teste@test.com.br",
-  			:password => "123456",
-  			:password_confirmation => "123456"
-  			})
+      
+      existing = users(:test1)
 
   		user = User.create(:email => existing.email)
   		expect(user).to have(1).error_on(:email)

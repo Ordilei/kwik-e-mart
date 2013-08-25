@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :redirect_logged_user
   def new
   	@user = User.new
   end

@@ -6,4 +6,7 @@ FactoryGirl.define do
 		password_confirmation "test"
 	end
 
+	preload do
+		factory(:test1) { create(:user) }
+	end
 end
